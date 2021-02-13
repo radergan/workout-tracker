@@ -14,7 +14,7 @@ router.put("/api/workouts/:id", (req, res) => {
 
 router.post("/api/workouts", (req, res) => {
     console.log(req.body);
-    Workout.create({day: Date.now(), exercises: req.body})
+    Workout.create({day: Date.now(), exercises: req.body]})
       .then(dbTransaction => {
         res.json(dbTransaction);
       })

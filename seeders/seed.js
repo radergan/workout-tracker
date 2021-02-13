@@ -1,6 +1,16 @@
 let mongoose = require("mongoose");
 let Workout = require("../models/workout.js");
 
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/sample',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }
+);
+
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
