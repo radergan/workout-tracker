@@ -12,29 +12,23 @@ exercises: [
     {
         resistance: {
             type: String,
-            trim: true,
-            required: "Enter resistance"
+            trim: true
         },
         name: {
             type: String,
-            trim: true,
-            required: "Enter a name"
+            trim: true
         },
         duration: {
-            type: Number,
-            required: "Enter a duration"
+            type: Number
         },
         weight: {
-            type: Number,
-            required: "Enter a weight"
+            type: Number
         },
         reps:{
-            type: Number,
-            required: "Enter reps"
+            type: Number
         },
         sets: {
-            type: Number,
-            required: "Enter sets"
+            type: Number
         }
     }],
     totalDuration: {
